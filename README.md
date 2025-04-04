@@ -1,1 +1,1 @@
-# java-boj-solve-archive
+# java-boj-archive-study
