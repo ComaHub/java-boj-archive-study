@@ -1,5 +1,9 @@
-# IntelliJ Project Files
-/.idea/
-/*/*.iml
-/out/
+##### IntelliJ #####
+.idea
+*.iml
+out
+
+
+##### Visual Studio Code #####
+.vscode
 
