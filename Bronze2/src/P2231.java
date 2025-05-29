@@ -6,19 +6,16 @@ public class P2231 {
 
     int number = scanner.nextInt();
     int startNum = number - (String.valueOf(number).length() * 9);
-    if (startNum < 0) startNum = 0;
+    if (startNum <= 0) startNum = 1;
 
-    boolean isExist = false;
     for (int i = startNum; i <= number; i++) {
-      int calNum = cal(i);
-      if (calNum == number) {
-        isExist = true;
+      if (cal(i) == number) {
         System.out.println(i);
-        break;
+        return;
       }
     }
 
-    if (!isExist) System.out.println(0);
+    System.out.println(0);
   }
 
   public static int cal(int num) {
