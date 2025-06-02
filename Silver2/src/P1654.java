@@ -1,35 +1,37 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class P1654 {
   public static void main(String[] args) throws IOException {
     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-    List<Integer> list = new ArrayList<>();
 
     String[] input = bufferedReader.readLine().split(" ");
     int numMyLan = Integer.parseInt(input[0]);
     int needLan = Integer.parseInt(input[1]);
+    int[] numbers = new int[numMyLan];
 
+    long sum = 0;
     for (int i = 0; i < numMyLan; i++) {
-      list.add(Integer.parseInt(bufferedReader.readLine()));
+      numbers[i] = Integer.parseInt(bufferedReader.readLine());
+      sum += numbers[i];
     }
 
-    list.sort(Collections.reverseOrder());
+    bufferedReader.close();
 
-    int startLength = 1;
-    int endLength = list.get(0);
-    int midLength;
+    Arrays.sort(numbers);
+
+    long startLength = 1;
+    long endLength = (int) ((double) sum / numMyLan);
+    long midLength;
     boolean overFlag;
 
     do {
       midLength = (startLength + endLength) / 2;
 
-      int count = 0;
-      for (Integer i : list) {
+      long count = 0;
+      for (int i : numbers) {
         count += (i / midLength);
 
         if (count >= needLan) break;
@@ -46,9 +48,9 @@ public class P1654 {
 
     if (!overFlag) {
       while (true) {
-        int count = 0;
+        long count = 0;
 
-        for (Integer i : list) {
+        for (int i : numbers) {
           count += (i / midLength);
         }
 
@@ -61,9 +63,9 @@ public class P1654 {
 
     if (overFlag) {
       while (true) {
-        int count = 0;
+        long count = 0;
 
-        for (Integer i : list) {
+        for (int i : numbers) {
           count += (i / midLength);
         }
 
