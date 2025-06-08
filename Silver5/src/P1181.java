@@ -20,14 +20,18 @@ public class P1181 {
         if (o1.length() == o2.length()) {
           return o1.compareTo(o2);
         } else {
-          if (o1.length() < o2.length()) return -1;
-          else return 1;
+          return Integer.compare(o1.length(), o2.length());
         }
       }
     });
 
     for (String s : list) {
-      System.out.println(s);
+      bufferedWriter.write(s + "\n");
     }
+
+    bufferedWriter.flush();
+
+    bufferedReader.close();
+    bufferedWriter.close();
   }
 }
