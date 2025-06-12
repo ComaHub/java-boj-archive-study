@@ -1,31 +1,22 @@
-import java.util.LinkedList;
-import java.util.List;
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Scanner;
 
 public class P2164 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    List<Integer> list = new LinkedList<>();
+    Deque<Integer> queue = new ArrayDeque<>();
 
-    int cardNum = scanner.nextInt();
-    for (int i = 2; i <= cardNum; i += 2) {
-      list.add(i);
-    }
-    if (cardNum % 2 == 1) list.add(0, cardNum);
-
-    boolean cardSwitch = true;
-    while (list.size() > 1) {
-      if (cardSwitch) {
-        list.remove(0);
-        cardSwitch = false;
-        continue;
-      }
-
-      int number = list.remove(0);
-      list.add(number);
-      cardSwitch = true;
+    int num = scanner.nextInt();
+    for (int i = 1; i <= num; i++) {
+      queue.offer(i);
     }
 
-    System.out.println(list.get(0));
+    while (queue.size() > 1) {
+      queue.poll();
+      queue.offer(queue.poll());
+    }
+
+    System.out.println(queue.poll());
   }
 }
