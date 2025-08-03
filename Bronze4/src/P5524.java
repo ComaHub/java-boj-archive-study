@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P5524 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int testCase = Integer.parseInt(scanner.nextLine());

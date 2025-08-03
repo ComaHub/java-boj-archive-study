@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P2563 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int[][] paper = new int[100][100];

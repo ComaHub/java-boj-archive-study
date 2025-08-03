@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class P13277 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     BigInteger num1 = scanner.nextBigInteger();

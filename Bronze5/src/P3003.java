@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P3003 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     int[] myPiece = new int[6];
     int[] CHESS_PIECE = {1, 1, 2, 2, 2, 8};

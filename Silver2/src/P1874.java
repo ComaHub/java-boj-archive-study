@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class P1874 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     Deque<Integer> stack = new ArrayDeque<>();
     StringBuilder stringBuilder = new StringBuilder();

@@ -1,6 +1,7 @@
 import java.util.*;
 
 class Computer {
+  @SuppressWarnings("unused")
   private int comNo;
   private List<Computer> relations = new ArrayList<>();
 
@@ -17,6 +18,7 @@ public class P2606 {
   private static final Set<Computer> VIRUS_COM = new HashSet<>();
 
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     Computer[] computers = new Computer[scanner.nextInt() + 1];

@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P4696 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     while (true) {

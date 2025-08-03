@@ -9,6 +9,7 @@ public class P28453 {
   }
 
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int[] levels = new int[scanner.nextInt()];

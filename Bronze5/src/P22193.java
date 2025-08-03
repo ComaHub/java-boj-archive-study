@@ -3,9 +3,12 @@ import java.util.Scanner;
 
 public class P22193 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
+    @SuppressWarnings("unused")
     int n = scanner.nextInt();
+    @SuppressWarnings("unused")
     int m = scanner.nextInt();
 
     BigInteger numA = scanner.nextBigInteger();

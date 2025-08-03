@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P5565 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int fullPrice = scanner.nextInt();

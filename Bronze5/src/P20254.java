@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P20254 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int UR_SCORE = 56;

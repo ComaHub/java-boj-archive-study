@@ -4,6 +4,7 @@ import java.util.Set;
 
 public class P11478 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     Set<String> set = new HashSet<>();
 

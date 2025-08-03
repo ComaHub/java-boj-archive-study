@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P25314 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int byteNum = scanner.nextInt() / 4;

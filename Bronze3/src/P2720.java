@@ -7,6 +7,7 @@ public class P2720 {
 
 
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     StringBuilder stringBuilder;
 

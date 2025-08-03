@@ -4,6 +4,7 @@ public class P9095 {
   static int count = 0;
 
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int testCase = scanner.nextInt();

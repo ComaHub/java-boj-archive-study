@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P17256 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int[] cake_A = {scanner.nextInt(), scanner.nextInt(), scanner.nextInt()};

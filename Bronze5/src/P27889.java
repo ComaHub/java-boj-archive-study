@@ -7,6 +7,7 @@ public class P27889 {
   private static final String SJA = "St. Johnsbury Academy";
 
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     String schoolName = scanner.nextLine();

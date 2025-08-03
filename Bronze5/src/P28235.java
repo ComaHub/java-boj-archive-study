@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P28235 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     String cheer = scanner.nextLine();

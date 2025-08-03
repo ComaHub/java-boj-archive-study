@@ -4,6 +4,7 @@ public class P10214 {
   private static final int INNING = 9;
 
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int testCase = scanner.nextInt();

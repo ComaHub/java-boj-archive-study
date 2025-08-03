@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P9498 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int grade = scanner.nextInt();

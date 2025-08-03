@@ -2,8 +2,10 @@ import java.util.Scanner;
 
 public class P30958 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
+    @SuppressWarnings("unused")
     int logoLength = scanner.nextInt();
     scanner.nextLine();
     String[] logoSplit = scanner.nextLine().split("");

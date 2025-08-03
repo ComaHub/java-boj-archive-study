@@ -6,6 +6,7 @@ public class P1914 {
   static StringBuilder stringBuilder = new StringBuilder();
 
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int floor = scanner.nextInt();

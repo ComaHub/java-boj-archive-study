@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P1085 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int[] point = new int[4]; // x, y, w, h

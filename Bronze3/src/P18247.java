@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P18247 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     int MIN_COLUMN = 12;
     int MIN_SEAT = 4;

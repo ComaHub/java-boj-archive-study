@@ -2,11 +2,13 @@ import java.util.Scanner;
 
 public class P10250 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int testCase = scanner.nextInt();
     for (int i = 0; i < testCase; i++) {
       int h = scanner.nextInt();
+      @SuppressWarnings("unused")
       int w = scanner.nextInt();
       int n = scanner.nextInt();
 

@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P24265 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     long num = scanner.nextLong();

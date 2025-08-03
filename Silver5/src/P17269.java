@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class P17269 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     List<Integer> list = new ArrayList<>();
     List<Integer> backupList;

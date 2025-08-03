@@ -4,6 +4,7 @@ public class P14645 {
   public static void main(String[] args) {
     try (Scanner scanner = new Scanner(System.in)) {
       int stops = scanner.nextInt();
+      @SuppressWarnings("unused")
       int people = scanner.nextInt();
 
       for (int i = 0; i < stops; i++) {

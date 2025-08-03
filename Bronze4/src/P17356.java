@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P17356 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int wookPower = scanner.nextInt();

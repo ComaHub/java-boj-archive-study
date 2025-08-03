@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P10810 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int[] bucket = new int[scanner.nextInt()];

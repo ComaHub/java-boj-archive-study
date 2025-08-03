@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P21612 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int boilPoint = scanner.nextInt();

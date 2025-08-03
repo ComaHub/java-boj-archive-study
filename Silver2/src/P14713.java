@@ -2,6 +2,7 @@ import java.util.*;
 
 public class P14713 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     List<Queue<String>> list = new ArrayList<>();
 

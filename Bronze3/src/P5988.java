@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class P5988 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     BigInteger two = new BigInteger("2");
     BigInteger remain = new BigInteger("1");

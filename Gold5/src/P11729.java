@@ -5,6 +5,7 @@ public class P11729 {
   static StringBuilder stringBuilder = new StringBuilder();
 
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int floor = scanner.nextInt();
