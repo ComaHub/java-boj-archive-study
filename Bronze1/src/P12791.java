@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class P12791 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     HashMap<Integer, String> hashMap = makeDatabase();
     StringBuffer stringBuffer;
@@ -36,7 +37,7 @@ public class P12791 {
     System.out.println(finalResult);
   }
 
-  private static HashMap makeDatabase() {
+  private static HashMap<Integer, String> makeDatabase() {
     HashMap<Integer, String> hashMap = new HashMap<>();
 
     hashMap.put(1967, "DavidBowie");

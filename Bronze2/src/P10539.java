@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P10539 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int[] sumArrOfA = new int[scanner.nextInt()];

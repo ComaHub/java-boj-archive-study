@@ -7,6 +7,7 @@ public class P27891 {
   public static final String SJA = "stjohnsbur";
 
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     String encoded = scanner.nextLine();

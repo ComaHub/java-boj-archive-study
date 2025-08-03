@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class P2748 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
     ArrayList<Long> arrayList = new ArrayList<>();
     arrayList.add((long) 0);

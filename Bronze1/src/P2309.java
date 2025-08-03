@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class P2309 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     int[] people = new int[9];

@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P5622 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     String[] alphaToNum = {"", "", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"};

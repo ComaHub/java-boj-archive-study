@@ -2,8 +2,10 @@ import java.util.Scanner;
 
 public class P22950 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
+    @SuppressWarnings("unused")
     int myDigit = scanner.nextInt();
     scanner.nextLine();
     String inputBin = new StringBuffer(scanner.nextLine()).reverse().toString();

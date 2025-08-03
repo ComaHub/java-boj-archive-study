@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class P2577 {
   public static void main(String[] args) {
+    @SuppressWarnings("resource")
     Scanner scanner = new Scanner(System.in);
 
     String abc = String.valueOf(scanner.nextInt() * scanner.nextInt() * scanner.nextInt());
