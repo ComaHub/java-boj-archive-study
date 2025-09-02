@@ -1,0 +1,21 @@
+package dev.coma.boj.Bronze3;
+
+import java.util.Scanner;
+
+public class P10833 {
+  public static void main(String[] args) {
+    try (Scanner scanner = new Scanner(System.in)) {
+			int testCase = scanner.nextInt();
+
+			int remainApple = 0;
+			for (int i = 0; i < testCase; i++) {
+			  int people = scanner.nextInt();
+			  int apples = scanner.nextInt();
+
+			  remainApple += apples % people;
+			}
+
+			System.out.println(remainApple);
+		}
+  }
+}

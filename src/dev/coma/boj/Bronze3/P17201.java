@@ -1,0 +1,21 @@
+package dev.coma.boj.Bronze3;
+
+import java.util.Scanner;
+
+public class P17201 {
+  public static void main(String[] args) {
+    try (Scanner scanner = new Scanner(System.in)) {
+			@SuppressWarnings("unused")
+			int amountMagnet = scanner.nextInt();
+			scanner.nextLine();
+
+			String magnetCol = scanner.nextLine();
+
+			if (magnetCol.contains("11") || magnetCol.contains("22")) {
+			  System.out.println("No");
+			} else {
+			  System.out.println("Yes");
+			}
+		}
+  }
+}

@@ -1,0 +1,17 @@
+package dev.coma.boj.Bronze4;
+
+import java.util.Scanner;
+
+public class P28248 {
+  public static void main(String[] args) {
+    try (Scanner scanner = new Scanner(System.in)) {
+			int successDelivery = scanner.nextInt();
+			int crashCount = scanner.nextInt();
+
+			int sum = (successDelivery * 50) - (crashCount * 10);
+			if (successDelivery > crashCount) sum += 500;
+
+			System.out.println(sum);
+		}
+  }
+}
