@@ -1,53 +1,37 @@
 package dev.coma.boj.Silver3;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-// 미해결
+import java.util.Scanner;
 
 public class P2579 {
-  public static void main(String[] args) throws IOException {
-    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+	private static int[] memoArr;
+	
+  public static void main(String[] args) {
+  	try (Scanner scanner = new Scanner(System.in)) {
+  		int[] stairs = new int[scanner.nextInt()];
+  		memoArr = new int[stairs.length];
+  		
+  		for (int i = 0; i < stairs.length; i++) {
+  			stairs[i] = scanner.nextInt();
+  		}
+  		
+  		if (stairs.length == 1) {
+  			System.out.println(stairs[0]);
+  			return;
+  		}
+  		
+  		if (stairs.length == 2) {
+  			System.out.println(stairs[0] + stairs[1]);
+  			return;
+  		}
+  		
+  		memoArr[0] = stairs[0];
+  		memoArr[1] = memoArr[0] + stairs[1];
+  		memoArr[2] = Math.max(memoArr[0] + stairs[2], stairs[1] + stairs[2]);
+  		for (int i = 3; i < stairs.length; i++) {
+  			memoArr[i] = Math.max(memoArr[i - 2] + stairs[i], memoArr[i - 3] + stairs[i - 1] + stairs[i]);
+  		}
 
-    int stair = Integer.parseInt(bufferedReader.readLine());
-    int[] stairsArr = new int[stair];
-    for (int i = 0; i < stairsArr.length; i++) {
-      stairsArr[i] = Integer.parseInt(bufferedReader.readLine());
-    }
-
-    if (stair == 1) {
-      System.out.println(stairsArr[0]);
-      return;
-    }
-
-    int[] sumArr = new int[stairsArr.length];
-    boolean[] sumArrLimit = new boolean[stairsArr.length];
-
-    sumArr[0] = stairsArr[0];
-    sumArrLimit[0] = false;
-    sumArr[1] = sumArr[0] + stairsArr[1];
-    sumArrLimit[1] = true;
-
-    for (int i = 2; i < stairsArr.length; i++) {
-      int oneStep = sumArr[i - 1] + stairsArr[i];
-      int twoStep = sumArr[i - 2] + stairsArr[i];
-
-      if (sumArrLimit[i - 1]) {
-        sumArr[i] = twoStep;
-        sumArrLimit[i] = false;
-      } else {
-        if (twoStep >= oneStep) {
-          sumArr[i] = twoStep;
-          sumArrLimit[i] = false;
-        } else {
-          sumArr[i] = oneStep;
-          sumArrLimit[i] = true;
-        }
-      }
-    }
-
-    System.out.println(sumArr[sumArr.length - 1]);
-    bufferedReader.close();
+  		System.out.println(memoArr[stairs.length - 1]);
+  	}
   }
 }
