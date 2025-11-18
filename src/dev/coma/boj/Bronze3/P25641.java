@@ -2,6 +2,7 @@ package dev.coma.boj.Bronze3;
 
 import java.util.Scanner;
 
+@SuppressWarnings("unused")
 public class P25641 {
 	public static void main(String[] args) {
 		try (Scanner scanner = new Scanner(System.in)) {
