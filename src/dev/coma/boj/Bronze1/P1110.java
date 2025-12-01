@@ -33,8 +33,8 @@ public class P1110 {
 			    number = newNumber;
 			  }
 			}
-		} catch (NumberFormatException e) {
-			e.printStackTrace();
+		} catch (Exception e) {
+			System.err.println(e.getStackTrace()[0]);
 		}
   }
 }
